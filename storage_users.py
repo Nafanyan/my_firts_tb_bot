@@ -1,6 +1,6 @@
 
 users_rights: dict = {}
-users_actions = ['/city','/help','/hello']
+users_actions = ['/sweet','/help','/hello']
 
 def read_storage():
     info = open('storage_users.txt','r')
