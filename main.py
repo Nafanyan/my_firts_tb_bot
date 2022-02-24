@@ -1,10 +1,12 @@
-from telegram import Update
-from telegram import User
+
 from telegram.ext import Updater, CommandHandler, CallbackContext
+from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update
 from telegram.ext import MessageHandler, Filters
 from command_file import*
 
+
 updater = Updater('5129629480:AAFUVifhSxk5grdrlQs2loTznpKElBZO1mg')
+
 
 updater.dispatcher.add_handler(MessageHandler(Filters.text & (~Filters.command), users_msg))
 updater.dispatcher.add_handler(CommandHandler('hello', hi_command))
